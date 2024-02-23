@@ -19,4 +19,22 @@ sendBtn.addEventListener('click', function(event) {
   }
 })
 
-// DADI
+// DICE
+const playBtn = document.querySelector('.js-play');
+const userDice = document.querySelector('.js-user-dice');
+const pcDice = document.querySelector('.js-computer-dice');
+const diceResult = document.querySelector('.js-dice-result');
+
+playBtn.addEventListener('click', function() {
+
+userDice.innerHTML = Math.ceil(Math.random() * 6);
+pcDice.innerHTML = Math.ceil(Math.random() * 6);
+
+if (userDice.innerHTML > pcDice.innerHTML) {
+  diceResult.innerHTML = 'Hai Vinto!';
+} else if (userDice.innerHTML < pcDice.innerHTML){
+  diceResult.innerHTML = 'Hai Perso!';
+} else {
+  diceResult.innerHTML = 'Pareggio!';
+}
+})
