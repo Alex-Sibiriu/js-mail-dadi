@@ -1,0 +1,32 @@
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #333, #777, #333);
+}
+
+.js-bg-darkblue {
+  background: linear-gradient(to bottom right, darkblue, blue, darkblue) ;
+}
+
+.js-txt-green {
+  color: gree;
+}
+
+.js-shadow {
+  box-shadow: 5px 5px 15px black;
+}
+
+.js-txt-shadow {
+  text-shadow: 5px 5px 15px black;
+}
+
+.js-user-dice,
+.js-computer-dice {
+  width: 80px;
+  aspect-ratio: 1;
+  color: #444;
+  border-bottom: 10px solid rgb(134, 121, 97);
+  border-right: 8px solid rgb(134, 121, 97);
+  border-radius: 15px;
+  background: wheat;
+  box-shadow: 0 0 8px inset rgb(134, 121, 97);
+}
